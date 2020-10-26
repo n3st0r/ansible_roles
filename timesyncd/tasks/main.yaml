@@ -1,0 +1,8 @@
+---
+
+- name: Prepare configuration for timesyncd
+  template:
+    src: "etc/systemd/timesyncd.conf"
+    dest: "/etc/systemd/timesyncd.conf"
+  tags:
+    - timesyncd
