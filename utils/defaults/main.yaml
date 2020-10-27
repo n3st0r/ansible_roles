@@ -1,0 +1,7 @@
+---
+
+debian_basic_utils:
+  - htop
+  - screen
+  - tmux
+  - vim

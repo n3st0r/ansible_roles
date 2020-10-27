@@ -1,0 +1,8 @@
+---
+
+- name: Install basic utils
+  ansible.builtin.apt:
+    name: "{{ debian_basic_utils }}"
+    state: present
+    update_cache: yes
+    cache_valid_time: 3600
