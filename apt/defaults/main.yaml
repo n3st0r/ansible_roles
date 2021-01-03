@@ -1,0 +1,5 @@
+---
+
+apt_proxy_file_name: '/etc/apt/apt.conf.d/76proxy'
+# apt_proxy_http:
+# apt_proxy_https:

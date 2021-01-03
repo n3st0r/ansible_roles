@@ -1,0 +1,10 @@
+---
+
+- name: Create configuration for proxy
+  template:
+      dest: "{{ apt_proxy_file_name }}"
+      src: "etc/apt/apt.conf.d/apt-proxy.conf"
+      owner: root
+      group: root
+      mode: 0644
+  when: apt_proxy_http is defined or apt_proxy_https is defined
